@@ -1,9 +1,9 @@
 @echo off
 REM --------------------------------------------------------
-REM Author:     xearonet
-REM Modified:   03.03.2023
-REM Version:    2.0
-REM Desc:       Start AutoHotKey scripts
+REM Author:        xearonet
+REM Modified:      03.03.2023
+REM Version:       2.0
+REM Desc:          Start AutoHotKey scripts
 REM --------------------------------------------------------
 
 cls
