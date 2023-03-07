@@ -3,7 +3,7 @@
 ; AHK Version:     1.1 x64 Unicode
 ; Author:          xearonet
 ; Modified:        2022-11-17
-; Version:         1.00
+; Version:         1.01
 ; Desc:            Start programs using WIN key shortcuts
 ; ----------------------------------------------------------
 
@@ -30,46 +30,3 @@ Return
 $#c:: 
 Run, calc.exe
 Return
-
-
-;  Convert case by shortcuts
-
-; Convert text to lower
-; Win+u
-#u::
-    ; StringLower Clipboard, Clipboard
-    ; Send %Clipboard%
-    Convert_Lower()
-Return
-
-; Convert text to upper
-; Win+Shift+u
-#+u::
-    ; StringUpper Clipboard, Clipboard
-    ; Send %Clipboard%
-    Convert_Upper()
-Return
-
-Convert_Lower()
-{
-    Clip_Save:= ClipboardAll                                                 ; save original contents of clipboard
-    Clipboard:= ""                                                           ; empty clipboard
-    Send ^c{delete}                                                          ; copy highlighted text to clipboard
-    StringLower Clipboard, Clipboard                                         ; convert clipboard to desired case
-    Send %Clipboard%                                                         ; send desired text
-    Len:= Strlen(Clipboard)
-    Send +{left %Len%}                                                       ; highlight text
-    Clipboard:= Clip_Save                                                    ; restore clipboard
-}
-
-Convert_Upper()
-{
-    Clip_Save:= ClipboardAll                                                 ; save original contents of clipboard
-    Clipboard:= ""                                                           ; empty clipboard
-    Send ^c{delete}                                                          ; copy highlighted text to clipboard
-    StringUpper Clipboard, Clipboard                                         ; convert clipboard to desired case
-    Send %Clipboard%                                                         ; send desired text
-    Len:= Strlen(Clipboard)
-    Send +{left %Len%}                                                       ; highlight text
-    Clipboard:= Clip_Save                                                    ; restore clipboard
-}
