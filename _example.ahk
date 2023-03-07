@@ -2,9 +2,9 @@
 ; Win Version:     Windows 7+
 ; AHK Version:     1.1 x64 Unicode
 ; Author:          xearonet
-; Modified:        2022.11.17
+; Modified:        2022-11-17
 ; Version:         1.00
-; Desc:            <description>
+; Desc:            description
 ; ----------------------------------------------------------
 
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.

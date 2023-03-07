@@ -2,7 +2,7 @@
 ; Win Version:     Windows 7+
 ; AHK Version:     1.1 x64 Unicode
 ; Author:          xearonet
-; Modified:        2023.03.01
+; Modified:        2023-03-01
 ; Version:         2.00
 ; Desc:            Click "RUN" button on sololearn.com playground page
 ; ----------------------------------------------------------

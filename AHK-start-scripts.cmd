@@ -1,8 +1,8 @@
 @echo off
 REM --------------------------------------------------------
 REM Author:        xearonet
-REM Modified:      03.03.2023
-REM Version:       2.0
+REM Modified:      2023-03-03
+REM Version:       2.00
 REM Desc:          Start AutoHotKey scripts
 REM --------------------------------------------------------
 
