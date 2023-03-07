@@ -4,7 +4,7 @@
 ; Author:          xearonet
 ; Modified:        2022-11-17
 ; Version:         1.00
-; Desc:            Remapping w to Shift+W for sprint in Scrap Mechanic
+; Desc:            Remapping "W" to Shift+w for always sprint in Scrap Mechanic
 ; ----------------------------------------------------------
 
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
