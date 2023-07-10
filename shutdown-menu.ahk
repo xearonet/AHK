@@ -17,7 +17,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^!End::  ; Ctrl+Alt+End
 Run, mshta vbscript:Execute("dim objShell:set objShell = CreateObject(""shell.application""):objshell.ShutdownWindows:set objShell = nothing:window.close"),, Hide
 Sleep, 100
-if Not WinActive("Zamykanie systemu Windows") {
+if Not (WinActive("Shut Down Windows") or WinActive("Zamykanie systemu Windows")) {
     WinActivate
 }
 Return
