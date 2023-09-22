@@ -4,7 +4,7 @@ Bunch of AutoHotkey scripts
 
 | Name | Description |
 |---|---|
-| alt-r-refresh.ahk | Send refresh signal to selected apps |
+| alt-shortcuts.ahk | Send refresh signal to selected apps |
 | convert-case.ahk | Convert case by shortcuts (uses clipboard) |
 | numkeys-remap.ahk | Remap the keypad numbers to their equivalents in the top number row |
 | numLock-enable.ahk | Enable NumLock |
