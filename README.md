@@ -4,17 +4,17 @@ Bunch of AutoHotkey scripts
 
 | Name | Description |
 |---|---|
-| alt-r-refresh | Send refresh signal to selected apps |
-| convert-case | Convert case by shortcuts (uses clipboard) |
-| numkeys-remap | Remap the keypad numbers to their equivalents in the top number row |
-| numLock-enable | Enable NumLock |
-| scrap-mechanic-always-sprint | Remapping "W" to Shift+w for always sprint in Scrap Mechanic |
-| screensaver-now | Starts the screensaver immediately |
-| shutdown-menu | Show up Windows shutdown menu |
-| sololearn-run | Click "RUN" button on sololearn.com playground page |
-| spanish-letters | Allows you to enter Spanish letters on a non-Spanish keyboard layout |
-| winkey-shortcuts | Start programs using WIN key shortcuts |
-| yt-global-play-pause | Control YT globally by custom key (Play/Pause multimedia key) |
+| alt-r-refresh.ahk | Send refresh signal to selected apps |
+| convert-case.ahk | Convert case by shortcuts (uses clipboard) |
+| numkeys-remap.ahk | Remap the keypad numbers to their equivalents in the top number row |
+| numLock-enable.ahk | Enable NumLock |
+| scrap-mechanic-always-sprint.ahk | Remapping "W" to Shift+w for always sprint in Scrap Mechanic |
+| screensaver-now.ahk | Starts the screensaver immediately |
+| shutdown-menu.ahk | Show up Windows shutdown menu |
+| sololearn-run.ahk | Click "RUN" button on sololearn.com playground page |
+| spanish-letters.ahk | Allows you to enter Spanish letters on a non-Spanish keyboard layout |
+| winkey-shortcuts.ahk | Start programs using WIN key shortcuts |
+| yt-global-play-pause.ahk | Control YT globally by custom key (Play/Pause multimedia key) |
 
 <br>
 Installation:
