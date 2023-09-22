@@ -2,9 +2,9 @@
 ; Win Version:     Windows 7+
 ; AHK Version:     1.1 x64 Unicode
 ; Author:          xearonet
-; Modified:        2023-05-17
-; Version:         1.00
-; Desc:            Allows you to enter Spanish letters on a non-Spanish keyboard layout
+; Modified:        2023-09-22
+; Version:         2.00
+; Desc:            Bunch of miscellaneous shortcuts
 ; ----------------------------------------------------------
 
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -14,6 +14,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance Force
 
 
+; RAlt + m - send eñe
 RAlt & m:: ; RAlt + m
 Send {U+00F1} ; eñe
+Return
+
+
+; Esc + End - send Enter
+Esc & End:: ; Esc + End
+Send {Enter}
 Return
