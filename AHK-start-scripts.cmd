@@ -12,7 +12,7 @@ set title=Start AutoHotKey scripts
 title %title% & echo %title%
 echo.
 
-set "ahk_binary=C:\Portable\AutoHotkey_1.1.35.00\AutoHotkeyU64.exe"
+set ahk_binary="C:\Program Files\AutoHotkey\AutoHotkeyU64.exe"
 set "logfile=%~dp0log.txt"
 
 echo %DATE% %TIME% > %logfile%
