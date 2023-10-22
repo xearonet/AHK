@@ -6,6 +6,7 @@ Bunch of AutoHotkey scripts
 |---|---|
 | alt-shortcuts.ahk | Send refresh signal to selected apps |
 | convert-case.ahk | Convert case by shortcuts (uses clipboard) |
+| gta5-cheats.ahk | Activate selected cheats in GTA 5 |
 | misc-shortcuts.ahk | Bunch of miscellaneous shortcuts |
 | numkeys-remap.ahk | Remap the keypad numbers to their equivalents in the top number row |
 | numLock-enable.ahk | Enable NumLock |
