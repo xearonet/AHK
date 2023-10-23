@@ -16,7 +16,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #IfWinActive AHK_exe GTA5.exe ; The hotkeys will only work when the game is in focus
 
-RAlt & F9::
+F1::
     Send {``}
     Sleep 10
     Send CATCHME
@@ -49,21 +49,24 @@ RAlt & F9::
     Sleep 10
     Send DEADEYE
     Send {Enter}
-
 Return
 
-F9::
+F2::
     Send {``}
     Sleep 10
     Send PAINKILLER
     Send {Enter}
 Return
 
-F10::
-    Send {``}
-    Sleep 10
-    Send TOOLUP
-    Send {Enter}
+F3::
+    Loop, 3
+    {
+        Sleep 100
+        Send {``}
+        Sleep 10
+        Send TOOLUP
+        Send {Enter}
+    }
 Return
 
 #IfWinActive
