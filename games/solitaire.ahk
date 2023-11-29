@@ -15,5 +15,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 #IfWinActive ahk_exe Solitaire.exe ; The hotkeys will only work when the game is in focus
-XButton1::^z ; Remapping w to Shift+W for sprint
+XButton1::^z ; Remapping mouse 4th button to "Ctrl+Z"
 #IfWinActive
