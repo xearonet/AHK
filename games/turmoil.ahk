@@ -15,6 +15,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 #IfWinActive ahk_exe Turmoil.exe ; The hotkeys will only work when the game is in focus
-t::r
-z::m
+e::r
+q::m
+a::c
+1::x
 #IfWinActive
