@@ -14,6 +14,23 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance Force
 
 
+; Browsers
+browsers := ["chrome.exe", "firefox.exe", "msedge.exe", "brave.exe"]
+
+IsBrowserActive() {
+    global browsers
+    WinGet, proc, ProcessName, A
+    for _, exe in browsers
+        if (proc = exe) {
+            return true
+        }
+    return false
+}
+
+#If IsBrowserActive()
+!r::Send {F5}
+#If
+
 ; Chrome
 #IfWinActive ahk_exe chrome.exe
 ; !r::MsgBox You pressed Alt-R while Chrome is active
