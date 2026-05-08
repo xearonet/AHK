@@ -1,19 +1,20 @@
 ; ----------------------------------------------------------
-; Win Version:     Windows 7+
-; AHK Version:     1.1 x64 Unicode
+; Requirements:    AHK 2
 ; Author:          xearonet
-; Modified:        2022-11-17
+; Modified:        2026-05-08
 ; Version:         1.00
 ; Desc:            description
 ; ----------------------------------------------------------
 
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-#Warn  ; Enable warnings to assist with detecting common errors.
-#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#Requires AutoHotkey v2.0
 #SingleInstance Force
+#Warn All
+
+SendMode "Input"
+SetWorkingDir A_ScriptDir
 
 
 F1::
-MsgBox, Example!!!!
-Return
+{
+    MsgBox "Example!!!!"
+}
