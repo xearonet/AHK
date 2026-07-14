@@ -13,7 +13,13 @@ title %title% & echo %title%
 echo.
 
 echo Killed scripts:
-taskkill /IM "AutoHotkey*" /F
+taskkill /IM "AutoHotkey*" /F >NUL 2>&1
+
+if %errorlevel%==0 (
+    echo Processes terminated.
+) else (
+    echo No AutoHotkey processes found.
+)
 
 echo Done
 timeout /T 2 /nobreak > NUL
