@@ -31,12 +31,6 @@ IsBrowserActive() {
 !r::Send {F5}
 #If
 
-; Chrome
-#IfWinActive ahk_exe chrome.exe
-; !r::MsgBox You pressed Alt-R while Chrome is active
-!r::Send {F5}
-#IfWinActive
-
 ; SourceTree
 #IfWinActive ahk_exe SourceTree.exe
 !r::Send {F5}
