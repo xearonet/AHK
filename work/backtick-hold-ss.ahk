@@ -2,9 +2,9 @@
 ; Author(s):       xearonet
 ; Win Version:     Windows 7+
 ; AHK Version:     2.0
-; Modified:        2022-12-27
-; Version:         1.01
-; Desc:            Send refresh signal to selected apps
+; Modified:        2026-11-04
+; Version:         1.03
+; Desc:            PrintScreen on long backtick press
 ; ----------------------------------------------------------
 
 #Requires AutoHotkey v2.0
@@ -13,12 +13,15 @@
 SetWorkingDir A_ScriptDir
 
 
-~RShift::
+$`::
 {
-    startTime := A_TickCount
-
-    KeyWait("RShift")
-
-    if (A_PriorKey = "RShift" && A_TickCount - startTime < 200)
+    if KeyWait("``", "T0.5")
+    {
+        Send("``")
+    }
+    else
+    {
         Send("{PrintScreen}")
+        KeyWait("``")
+    }
 }
