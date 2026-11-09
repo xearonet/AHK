@@ -13,6 +13,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #SingleInstance Force
 
+; ================================================================================================
+; If you use PowerToys "Grab And Move" you need to disable the following option:
+;     "Prevent Alt from activating the window menu after a drag or resize operation".
+; Otherwise, the script will not be able to detect the active window and will not work properly.
+; ================================================================================================
 
 ; Browsers
 browsers := ["chrome.exe", "firefox.exe", "msedge.exe", "brave.exe"]
