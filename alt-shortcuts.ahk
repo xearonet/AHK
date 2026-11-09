@@ -7,17 +7,19 @@
 ; Desc:            Send refresh signal to selected apps
 ; ----------------------------------------------------------
 
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#Requires AutoHotkey v1.1
 #Warn  ; Enable warnings to assist with detecting common errors.
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #SingleInstance Force
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; ================================================================================================
 ; If you use PowerToys "Grab And Move" you need to disable the following option:
 ;     "Prevent Alt from activating the window menu after a drag or resize operation".
 ; Otherwise, the script will not be able to detect the active window and will not work properly.
 ; ================================================================================================
+
 
 ; Browsers
 browsers := ["chrome.exe", "firefox.exe", "msedge.exe", "brave.exe"]
