@@ -1,30 +1,31 @@
 @echo off
 REM --------------------------------------------------------
 REM Author:        xearonet
-REM Modified:      2026-07-14
-REM Version:       2.00
+REM Modified:      2026-11-02
+REM Version:       3.00
 REM Desc:          Start AutoHotKey scripts
 REM --------------------------------------------------------
 
-REM cls
 setlocal
-set title=Start AutoHotKey scripts
+set "title=Start AutoHotKey scripts"
+set "logfile=%~dp0log.txt"
+
 title %title% & echo %title%
 echo.
 
-set "ahk_binary=%LOCALAPPDATA%\Programs\AutoHotkey\AutoHotkeyU64.exe"
-set "logfile=%~dp0log.txt"
+echo %DATE% %TIME% > "%logfile%"
+echo ------------------------- >> "%logfile%"
 
-echo %DATE% %TIME% > %logfile%
-echo ------------------------- >> %logfile%
-
-echo Loaded scripts: >> %logfile%
+echo Loaded scripts: >> "%logfile%"
 echo Loaded scripts:
-for %%f in (%~dp0Enabled\*.ahk) do (
-    echo     ^-^> %%~nxf >> %logfile%
-    echo     ^-^> %%~nxf
-    start "" /B "%ahk_binary%" "%%f"
+
+for %%F in ("%~dp0Enabled\*.ahk") do (
+    echo     ^-^> %%~nxF >> "%logfile%"
+    echo     ^-^> %%~nxF
+    start "" "%%F"
 )
-echo Done >> %logfile%
+
+echo Done >> "%logfile%"
 echo Done
+
 timeout /T 1 /nobreak > NUL
